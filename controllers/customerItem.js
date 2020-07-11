@@ -12,8 +12,8 @@ const getcustomerItems = async (req, res) => {
     let i of rows
   )
   {
-    i.createtime = moment(i.createtime).format('YYYY/MM/DD HH:mm:ss');
-    i.replytime = moment(i.replytime).format('YYYY/MM/DD HH:mm:ss');
+    i.createtime = moment(i.createtime).format('YYYY/MM/DD HH:mm');
+    i.replytime = moment(i.replytime).format('YYYY/MM/DD HH:mm');
   }
   res.json(rows);
 };
@@ -24,8 +24,8 @@ const getreplylist = async (req, res) => {
     let i of rows
   )
   {
-    i.createtime = moment(i.createtime).format('YYYY/MM/DD HH:mm:ss');
-    i.replytime = moment(i.replytime).format('YYYY/MM/DD HH:mm:ss');
+    i.createtime = moment(i.createtime).format('YYYY/MM/DD HH:mm');
+    i.replytime = moment(i.replytime).format('YYYY/MM/DD HH:mm');
   }
   res.json(rows);
 };

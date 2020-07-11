@@ -102,7 +102,7 @@ const UpdateUser = (req, res) => {
   }
   for (let i of [req.body.data]) {
     i.memberAddress ?
-    i.memberAddress = req.body.city + req.body.contury + req.body.data.memberAddress :
+    i.memberAddress = req.body.data.memberAddress :
     i.memberAddress =''
   }
   const sql = `UPDATE user SET  ? WHERE id = ? `;
